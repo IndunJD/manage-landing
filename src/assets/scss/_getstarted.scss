@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.get-started-text {
+	color: white;
+	letter-spacing: -2px;
+
+	@media (max-width: 768px) {
+		font-size: 46px;
+		text-align: center;
+	}
+}
+
+.get-started-col {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+	@media (max-width: 768px) {
+		justify-content: center;
+		padding-top: 20px;
+	}
+
+	.btn-white {
+		background-color: white;
+		color: $bright-red;
+		border-radius: 30px;
+		font-family: $primary-font;
+		font-size: 13px;
+		padding: 15px 30px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		box-shadow: rgba($dark-blue, 0.3) 0px 25px 20px -20px;
+		border: none;
+
+		&:hover {
+			color: $bright-red-active;
+		}
+	}
+}
+
+.pattern-overlay-3, .pattern-overlay-4 {
+	position: absolute;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+		opacity: 0.1;
+	}
+}
+
+.pattern-overlay-3 {
+	bottom: 30%;
+	left: 85%;
+	width: 50%;
+}
+.pattern-overlay-4 {
+	top: 0;
+	right: 44%;
+	width: 40%;
+}

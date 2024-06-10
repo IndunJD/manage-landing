@@ -1,0 +1,124 @@
+@import '../src/assets/scss/styles.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $primary-font;
+	width: 100%;
+	overflow-x: hidden;
+
+	@media (max-width: 360px) {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	@media (max-width: 576px) {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	@media (max-width: 1024px) {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+}
+
+.main-container {
+	margin: 20px 100px;
+	padding: 20px;
+
+	@media (max-width: 768px) {
+		margin: 20px 10px;
+	}
+
+	@media (max-width: 1025px) {
+		margin: 50px 10px;
+	}
+}
+
+.sub-container {
+	padding: 50px 120px;
+
+	@media (max-width: 768px) {
+		padding: 50px 60px;
+	}
+}
+
+.getstarted-container {
+	background-color: $bright-red;
+	position: relative;
+	overflow: hidden;
+}
+
+.footer-container {
+	background-color: $very-dark-blue;
+}
+
+.section-content-container {
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.section-title {
+	font-weight: $font-weight-700;
+	color: $dark-blue;
+	letter-spacing: -1px;
+}
+
+.section-subtitle {
+	font-size: 18px;
+	color: $dark-blue;
+	font-weight: $font-weight-700;
+	letter-spacing: -1px;
+}
+
+.content-text {
+	color: $light-gray-text;
+}
+
+@mixin btn-orange {
+	background-color: $bright-red;
+	border-radius: 30px;
+	font-family: $primary-font;
+	font-size: 13px;
+	padding: 15px 30px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	box-shadow: rgba($bright-red, 0.8) 0px 25px 20px -20px;
+	border: none;
+}
+
+.btn-orange-1 {
+	@include btn-orange;
+
+	&:hover {
+		background-color: $bright-red-active;
+	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.btn-orange-2 {
+	@include btn-orange;
+
+	&:hover {
+		background-color: $bright-red-active;
+	}
+}
+
+.desktop-only {
+	display: none;
+}
